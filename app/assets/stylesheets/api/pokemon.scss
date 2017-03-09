@@ -2,14 +2,24 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.main-pokemon {
+  display: flex;
+  height: 100%;
+}
+
+.pokemon-detail {
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  align-content: center;
+}
 
 .pokemonNavbar {
   padding: 0;
-  display: flex;
+  // display: flex;
   width: 20%;
   background-color: lightgray;
   justify-content: flex-start;
-  height: 100%;
   overflow-y: scroll;
   align-items: flex-start;
 }

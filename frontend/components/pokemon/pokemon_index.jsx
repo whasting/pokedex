@@ -18,11 +18,14 @@ class PokemonIndex extends React.Component {
         <PokemonIndexItem pokemon={pokemon} key={pokemon.id} />
     ));
     return (
-      <nav className="pokemonNavbar">
-        <ul>
-          {allPokemon}
-        </ul>
-      </nav>
+      <section className="main-pokemon">
+        <nav className="pokemonNavbar">
+          <ul>
+            {allPokemon}
+          </ul>
+        </nav>
+        {this.props.children}
+      </section>
     );
   }
 }

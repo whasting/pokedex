@@ -7,9 +7,9 @@ export const receiveAllPokemon = pokemon => ({
   pokemon
 });
 
-export const receiveSinglePokemon = pokemon => ({
+export const receiveSinglePokemon = pokemonDetail => ({
   type: RECEIVE_SINGLE_POKEMON,
-  pokemon
+  pokemonDetail
 });
 
 export const requestAllPokemon = () => dispatch => (
